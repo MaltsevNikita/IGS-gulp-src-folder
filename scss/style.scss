@@ -99,7 +99,98 @@ body{
     }
   }
 }
-
+.everyWeekSlider{
+  display: block;
+  &-button-prev{
+      color: #fff;
+    
+  }
+  &-button-next{
+    color: #fff;
+    
+  }
+}
+.house{
+  max-width: 30%;
+  padding: 24px;
+  border-radius: 24px;
+  &-forest{
+    background-color: #F2CF17;
+    color: #000;
+  }
+  &-mans{
+    background-color:#fff;
+    color:#000;
+  }
+  &-ger{
+    color: #000;
+    background-color: #fff;
+  }
+  &-suf{
+    background-color: #fff;
+    color: #000;
+  }
+  &-two{
+    color: #000;
+    background-color: #F2CF17
+  }
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+  &__name{
+    font-family: Roboto Flex;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0px 0px 6px 0px;
+    margin: 0;
+  }
+  
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__price{
+    padding: 4px 0;
+  }
+}
+.stock {
+  color: #000;
+  &-forest{
+    background-color: #fff;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 37px;
+}
+  &-mans{
+    background-color: #00543B;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 37px;
+  }
+  &-ger{
+    background-color: #F2CF17;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 37px;
+  }
+  &-suf{
+    background-color:#F2CF17;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 37px;
+  }
+  &-two{
+    background-color:#00543B;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 37px;
+}
+}
 .family{
   padding-top: (10vh);
   &__title{
@@ -210,7 +301,25 @@ body{
     font-weight: 800;
     padding-bottom: 20px;
   }
+  &-slider {
+    display: block;
+  }
+  &-slider-button-next{
+    vertical-align: middle;
+  }
+  &-slider-button-next {
+    vertical-align: middle;
+  }
 }
+
+
+
+
+
+
+
+
+
 
 .from-developer{
   display: flex;
