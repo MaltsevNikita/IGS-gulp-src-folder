@@ -38,12 +38,12 @@ const whatElseSlider = new Swiper('.whatElse-slider', {
   direction: 'horizontal',
   loop: true,
   grabCursor: true,
-  slidesPerView: 1.1,
+  slidesPerView: 1,
   mousewheel: {
     invert: false
   },
   navigation: {
-        nextEl: '.whatElse-slider-button-next',
-        prevEl: '.whatElse-slider-button-prev',
-      },
+    nextEl: '.whatElse-button-next',
+    prevEl: '.whatElse-button-prev',
+  },
 });

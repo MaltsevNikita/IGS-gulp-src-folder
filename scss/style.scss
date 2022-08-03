@@ -298,22 +298,35 @@ body{
 }
 .what-else{
   &__title{
-    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
     padding-bottom: 20px;
   }
   &-slider {
     display: block;
   }
-  &-slider-button-next{
-    vertical-align: middle;
-  }
-  &-slider-button-next {
-    vertical-align: middle;
-  }
 }
-
-
-
+.whatElse-slider__slide{
+  display: flex;
+  justify-content: space-evenly;
+}
+.whatElse-slide{
+  &__title{
+  color: #F2CF17;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  }
+  &__description{
+    max-width: 25vw;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    }
+}
 
 
 
