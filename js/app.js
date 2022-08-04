@@ -1,3 +1,4 @@
+const menu = ['01', '02', '03', '04', '05', '06', '07'];
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
@@ -7,10 +8,13 @@ const swiper = new Swiper('.swiper', {
   pagination: { 
     el: '.swiper-pagination',
     clickable: true,
-  },
-  mousewheel: {
-    invert: false,
-  },
+    renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+    mousewheel: {
+      invert: false,
+    },
+  }
 });
 
 const everyWeekSlider = new Swiper('.everyWeek-slider', {
