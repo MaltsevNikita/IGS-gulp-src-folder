@@ -11,9 +11,9 @@ const swiper = new Swiper('.swiper', {
     renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (menu[index]) + '</span>';
         },
-    mousewheel: {
-      invert: false,
-    },
+  mousewheel: {
+    invert: false,
+  },
   }
 });
 
@@ -40,8 +40,8 @@ const everyWeekSlider = new Swiper('.everyWeek-slider', {
 const whatElseSlider = new Swiper('.whatElse-slider', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
-  grabCursor: true,
+    loop: true,
+    grabCursor: true,
   slidesPerView: 1,
   mousewheel: {
     invert: false

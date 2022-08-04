@@ -27,13 +27,15 @@ body{
 }
 .swiper-pagination{
   margin-right: 10%;
-  margin-left: 5%;
+  margin-left: 15%;
   &-bullet{
-    margin: 12px !important;
-    &::before{
-      content: ""
-    }
-    }
+    margin-bottom: 10px;
+    
+  &::before{
+    content: "";
+    padding: 10px;
+  }
+  }
 }
 
 .soon{
