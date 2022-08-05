@@ -1,46 +1,62 @@
 $maxWidth: 1440px;
 $maxWidthContainer: 1112px;
 
-body{
+body {
   font-family: Roboto;
   background-color: #5337FF;
   color: #fff;
+  box-sizing:border-box;
 }
-.container{
+
+.container {
   margin: 0 auto;
   max-width: $maxWidthContainer;
 }
-.header{
-  padding-top: 34px;
-  padding-bottom: 36px;
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
-.down-arrow{
+
+.down-arrow {
   text-align: center;
 }
-.swiper,.swiper2 {
+
+.swiper,
+.swiper2 {
   max-width: 80vw;
+  height: 85vh;
+}
+
+.swiper-slide {
   height: 100vh;
-}
-.swiper-slide{
-  height: 100vw;
   margin-top: 20px;
-}
-.swiper-pagination{
-  margin-right: 10%;
-  margin-left: 15%;
-  &-bullet{
-    margin-bottom: 10px;
-    
-  &::before{
-    content: "";
-    padding: 10px;
-  }
+  &-active{
+    height: 80%;
   }
 }
 
-.soon{
-  color:#000;
-  background-color:#F2CF17;
+.swiper-pagination {
+  margin-right: 10%;
+  margin-left: 15%;
+
+  &-bullet {
+    margin-bottom: 10px;
+
+    &-active{
+      border: 4px solid #F2CF17;
+      background-color:#F2CF17;
+    }
+    &::before {
+      content: "";
+      padding: 10px;
+    }
+  }
+}
+
+.soon {
+  color: #000;
+  background-color: #F2CF17;
   border-radius: 37px;
   padding: 8px 24px;
   margin-bottom: 24px;
@@ -53,103 +69,126 @@ body{
   text-align: center;
   margin-top: 2vh;
 }
-.sides{
+
+.sides {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
-.left-side-text{
-  &-subtitle{
+
+.left-side-text {
+  &-subtitle {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.05em;
   }
-  &-title{
+
+  &-title {
     font-weight: 700;
-      font-size: 96px;
-      line-height: 112px;
-      margin-top: 0;
-      margin-bottom: 8px;
+    font-size: 96px;
+    line-height: 112px;
+    margin-top: 0;
+    margin-bottom: 8px;
   }
-  &-description{
+
+  &-description {
     margin-top: 0;
     font-size: 20px;
     line-height: 24px;
   }
-  &-app-buttons-block{
+
+  &-app-buttons-block {
     padding-top: 1vh;
     display: flex;
     justify-content: space-evenly;
   }
 }
-.slide-sides{
+
+.slide-sides {
   justify-content: space-evenly;
 }
+
 .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   font-size: 14px;
-  background-color: #fff
+  color:#F2CF17;
+  background-color: #F2CF17
 }
-.everyWeek{
-  &__title{
+
+.everyWeek {
+  &__title {
     padding-top: 40px;
     padding-bottom: 24px;
   }
-  &__marker{
-    color:#F2CF17;
+
+  &__marker {
+    color: #F2CF17;
   }
-  
+
   &-slider {
+    width: 78%;
     height: 100px;
     color: #fff;
-    &__slide{
+
+    &__slide {
       height: 450px;
       width: 100px;
     }
   }
 }
-.everyWeekSlider{
+
+.everyWeekSlider {
   display: block;
-  &-button-prev{
-      color: #fff;
-    
-  }
-  &-button-next{
+
+  &-button-prev {
     color: #fff;
-    
+
+  }
+
+  &-button-next {
+    color: #fff;
+
   }
 }
-.house{
+
+.house {
   max-width: 30%;
   padding: 24px;
   border-radius: 24px;
-  &-forest{
+
+  &-forest {
     background-color: #F2CF17;
     color: #000;
   }
-  &-mans{
-    background-color:#fff;
-    color:#000;
-  }
-  &-ger{
-    color: #000;
-    background-color: #fff;
-  }
-  &-suf{
+
+  &-mans {
     background-color: #fff;
     color: #000;
   }
-  &-two{
+
+  &-ger {
+    color: #000;
+    background-color: #fff;
+  }
+
+  &-suf {
+    background-color: #fff;
+    color: #000;
+  }
+
+  &-two {
     color: #000;
     background-color: #F2CF17
   }
-  &-top{
+
+  &-top {
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
   }
-  &__name{
+
+  &__name {
     font-family: Roboto Flex;
     font-size: 20px;
     font-weight: 500;
@@ -159,126 +198,146 @@ body{
     padding: 0px 0px 6px 0px;
     margin: 0;
   }
-  
-  &__bottom{
+
+  &__bottom {
     display: flex;
     justify-content: space-between;
   }
-  &__price{
+
+  &__price {
     padding: 4px 0;
   }
 }
+
 .stock {
   color: #000;
-  &-forest{
+
+  &-forest {
     background-color: #fff;
     font-weight: 600;
     padding: 6px 10px;
     border-radius: 37px;
-}
-  &-mans{
+  }
+
+  &-mans {
     background-color: #00543B;
     font-weight: 600;
     padding: 6px 10px;
     border-radius: 37px;
   }
-  &-ger{
+
+  &-ger {
     background-color: #F2CF17;
     font-weight: 600;
     padding: 6px 10px;
     border-radius: 37px;
   }
-  &-suf{
-    background-color:#F2CF17;
+
+  &-suf {
+    background-color: #F2CF17;
     font-weight: 600;
     padding: 6px 10px;
     border-radius: 37px;
   }
-  &-two{
-    background-color:#00543B;
+
+  &-two {
+    background-color: #00543B;
     font-weight: 600;
     padding: 6px 10px;
     border-radius: 37px;
+  }
 }
-}
-.family{
+
+.family {
   padding-top: (10vh);
-  &__title{
+
+  &__title {
     font-family: 'Roboto Flex';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 42px;
-      letter-spacing: 0.05em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
 
   }
-  &__title-excerpt{
+
+  &__title-excerpt {
     color: #F2CF17;
   }
-  &__subtitle{
+
+  &__subtitle {
     font-weight: 500;
     font-size: 24px;
     line-height: 140%;
   }
 }
-.save{
+
+.save {
   display: flex;
   justify-content: space-evenly;
   padding-top: 20vh;
-  
+
 }
- .club{
+
+.club {
   font-weight: 600;
   font-size: 16px;
   line-height: 22.4px;
   vertical-align: middle;
-  text-align: center;  
+  text-align: center;
   color: #000;
   padding: 8px 24px;
   background-color: #F2CF17;
   border-radius: 30px;
-  border:0px;
+  border: 0px;
   margin-bottom: 24px;
-  
- } 
- .save__title{
+
+}
+
+.save__title {
   font-weight: 700;
   font-size: 36px;
- }
-.save__excerpt{
-  color:#F2CF17
-  
 }
-.save__subtitle{
+
+.save__excerpt {
+  color: #F2CF17
+}
+
+.save__subtitle {
   font-size: 30px;
   line-height: 140%;
 }
-.costs-div{
+
+.costs-div {
   display: grid;
   max-width: 50vw;
-  color:#000;
+  color: #000;
   padding: 24px;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  background-color:#fff;
+  background-color: #fff;
   border-radius: 30px;
   align-items: center;
-  &__item{
+
+  &__item {
     padding-bottom: 10px;
   }
-  &__item_red{
+
+  &__item_red {
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
-    color:red;
+    color: red;
     // padding-bottom: 24px;
   }
-  &__item_semibold{
+
+  &__item_semibold {
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
     // padding-bottom: 24px;
   }
+
   &__item-last {
     border-top: 1px solid green;
     padding-top: 24px;
@@ -286,56 +345,66 @@ body{
     text-transform: uppercase;
   }
 }
-.example{
-  &__image{
+
+.example {
+  max-height: 100%;
+  &__image {
     padding-bottom: 40px;
   }
-  &__text{
+
+  &__text {
     display: flex;
     flex-direction: column;
     border-right: #fff 3px solid;
     max-width: 20%;
   }
-  &__price{
+
+  &__price {
     font-weight: 800;
     margin: 0;
     padding-bottom: 10px;
   }
-  &__description{
+
+  &__description {
     margin: 0;
     font-weight: 400;
   }
 }
-.what-else{
-  &__title{
+
+.what-else {
+  &__title {
     font-size: 36px;
     line-height: 42px;
     font-weight: 700;
     padding-bottom: 20px;
   }
+
   &-slider {
     display: block;
   }
 }
-.whatElse-slider__slide{
+
+.whatElse-slider__slide {
   display: flex;
   justify-content: space-evenly;
 }
-.whatElse-slide{
-  &__title{
-  color: #F2CF17;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: 0.05em;
-  text-align: left;
+
+.whatElse-slide {
+  &__title {
+    color: #F2CF17;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    text-align: left;
   }
-  &__description{
+
+  &__description {
     max-width: 25vw;
     font-weight: 500;
     font-size: 20px;
     line-height: 140%;
-    }
+  }
 }
 
 
@@ -344,15 +413,14 @@ body{
 
 
 
-.from-developer{
+.from-developer {
   display: flex;
+
   &__title {
-    font-weight: 700 
-    font-size 36px 
-    line-height 42.19px
+    font-weight: 700 font-size 36px line-height 42.19px
   }
-  
+
   &__app {
-    color:#F2CF17;
+    color: #F2CF17;
   }
 }
