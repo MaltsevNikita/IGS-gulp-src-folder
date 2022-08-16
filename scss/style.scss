@@ -250,7 +250,7 @@ body {
 }
 
 .family {
-  padding-top: (10vh);
+  padding-top: (5vh);
 
   &__title {
     font-family: 'Roboto Flex';
@@ -539,5 +539,52 @@ body {
     padding-bottom: 0;
     // padding: 12px 24px 12px 24px;
   }
+}
+.example{
+  &__text{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+  }
+}
+.what-else{
+  &__title{
+    display: none;
+  }
+}
+
+.whatElse-slider{
+  margin-top: 37px;
+}
+.whatElse-slider__slide{
+  display: block;
+}
+.whatElse-slide{
+  &__image{
+      width: 70%;
+      padding-left: 25%;
+  }
+  &__title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+  }
+  &__description{
+    display: inline;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    max-width: 13.15px;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+}
+.from-developer{
+  display: flex;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+  }
+
 }
 }
